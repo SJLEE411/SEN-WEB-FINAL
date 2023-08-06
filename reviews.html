@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Reviews</title>
+  <link rel="stylesheet" href="styles.css"> <!-- You can create this stylesheet for styling purposes -->
+</head>
+<body>
+  <h1>Game Reviews</h1>
+  <div id="review-container"></div>
+  
+  <!-- New Review Form -->
+  <h2>Add a New Review</h2>
+  <form id="new-review-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <label for="date">Date:</label>
+    <input type="date" id="date" required>
+    <label for="rating">Rating:</label>
+    <input type="number" id="rating" min="1" max="5" required>
+    <label for="review">Review:</label>
+    <textarea id="review" required></textarea>
+    <button type="submit">Create</button>
+  </form>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script> <!-- Create this script file -->
+</body>
+</html>
