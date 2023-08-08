@@ -1,0 +1,145 @@
+
+/* Sakura.css v1.3.1
+ * ================
+ * Minimal css theme.
+ * Project: https://github.com/oxalorg/sakura/
+ */
+/* Body */
+/*Top Bar*/
+.top-bar {
+    color: #f9f9f9;
+    padding: 0;
+}
+
+/*Nav Bar*/
+.navbar {
+    background-color: transparent;
+    padding: 10px;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end; /* Align items to the right */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center vertically within the navbar */
+}
+
+.navbar li {
+    margin-right: 20px;
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #982c61;
+}
+
+.top-bar, .navbar {
+    top: 0;
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+/*Body*/
+
+body {
+    margin-top: 70px; /* Adjust this value to match the combined heights of the top bar and navbar */
+    padding-top: 30px; /* Add padding to content to prevent overlap */
+}
+
+body {
+    background: url('./Lilith.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    line-height: 1.618;
+    font-family: 'Spectral', serif;}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Spectral', serif;    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+h1 { font-size: 2.35em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.75em; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1.25em; }
+h6 { font-size: 1em; }
+
+p { margin-bottom: 2.5rem; }
+
+a { text-decoration: none; color: #1d7484; }
+a:hover { color: #982c61; }
+
+ul { padding-left: 1.4em; margin-bottom: 2.5rem; }
+li { margin-bottom: 0.4em; }
+
+blockquote {
+    margin-left: 0;
+    padding: 0.8em;
+    border-left: 5px solid #1d7484;
+    margin-bottom: 2.5rem;
+    background-color: #f1f1f1;
+}
+
+img, video { max-width: 100%; margin-bottom: 2.5rem; }
+
+/* Buttons */
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #1d7484;
+    color: #f9f9f9;
+    border: 1px solid #1d7484;
+    cursor: pointer;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+.button:focus:enabled, .button:hover:enabled,
+button:focus:enabled, button:hover:enabled,
+input[type="submit"]:focus:enabled, input[type="submit"]:hover:enabled,
+input[type="reset"]:focus:enabled, input[type="reset"]:hover:enabled,
+input[type="button"]:focus:enabled, input[type="button"]:hover:enabled {
+    background-color: #982c61;
+    border-color: #982c61;
+    color: #f9f9f9;
+    outline: 0;
+}
+
+/* Form Elements */
+input, textarea {
+    border: 1px solid #4a4a4a;
+    color: #4a4a4a;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #1d7484;
+    outline: 0;
+}
+
+/* Miscellaneous */
+hr { border-color: #1d7484; }
