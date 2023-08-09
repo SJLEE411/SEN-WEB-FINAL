@@ -4,52 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About the Site and Creator</title>
+
+    <!-- WEB TITLE -->
+    <title>The Nephalems</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css"> 
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="./css/pngwing.com.png">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&display=swap" rel="stylesheet">
+
+
 </head>
-<body>
-    <header>
-        <h1>About the Site and Creator</h1>
-    </header>
 
-    <nav>
-        <ul>
-            <!-- Links for nav -->
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="info.html">Info</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-        </ul>
-    </nav>
+        <header>
+            <h1>
+                <a href ="index.html" ><img src ="./css/Diablo_Logo.png"  alt = "logo" class= "logo-img"></a>
+            </h1>
+        <nav>
+            <ul class = "nav__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+        </header>
 
-    <section id="bio">
-        <h2>Short Bio</h2>
-        <p>Hi, I'm [Your Name], the creator of this website. I'm a passionate gamer and web developer with a love for creating immersive online experiences. With a background in [Your Background], I combine my technical skills and creative vision to bring you this platform dedicated to the history and gameplay of the legendary Diablo game series.</p>
-    </section>
-    
-    <section id="choice">
-        <h2>Why I Chose Diablo</h2>
-        <p>I chose to focus on the Diablo game series because of its profound impact on the role-playing and hack-and-slash genres. The dark and atmospheric world, intricate storytelling, and addictive gameplay have captivated players for decades. Through this website, I aim to share my enthusiasm for the series and provide a comprehensive resource for both newcomers and seasoned adventurers in the world of Diablo.</p>
-    </section>
-    
-    <section id="citations">
-        <h2>Citations</h2>
-        <p>I would like to acknowledge the following sources for providing valuable information, media, and inspiration for this website:</p>
-        <ul>
-            <li>[Citation 1]: Description of Diablo's history from [Source Name]</li>
-            <li>[Citation 2]: Gameplay mechanics from [Source Name]</li>
-            <li>[Citation 3]: Tips and strategies from [Source Name]</li>
-            <!-- Add more citations as needed -->
-        </ul>
-    </section>
-    
-    <section id="honesty">
-        <h2>Honest Statement</h2>
-        <p>I, [Your Name], created this website as part of an assignment. The content and structure provided in this assignment, including the Honest Statement, were based on the instructions given. The information and details presented are simulated for educational purposes, and no actual newsletter sign-up or backend functionality has been implemented.</p>
-        <p>Date: [Current Date]</p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2023 Your Game Name. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+
+
+
+        <body>
+            <section id="about" class="content-section">
+                <h2>About The Nephalems</h2>
+                <p>Welcome to The Nephalems, your ultimate source for all things related to Diablo 4! My name is Sangjune Lee, and I'm the creator of this website.</p>
+                <p>As a passionate fan of the Diablo series, I've embarked on this journey to provide a dedicated platform where fellow players and fans can come together</p>
+                <p>to explore, discuss, and share their experiences with Diablo 4. Why Diablo 4, you ask? The game's rich lore, captivating gameplay, and the long-awaited </p>
+                <p>release have inspired me to create a space where we can celebrate this epic adventure and its impact on the gaming world.I've meticulously curated information,</p>
+                <p>trailers, reviews, and more to ensure you have access to a comprehensive resource for all things Diablo 4. I believe that together, we can forge a strong</p> 
+                <p>community of Nephalems who share the same passion and excitement for the game. I want to express my gratitude to the incredible creators, developers, and </p>
+                <p>artists who have contributed to the Diablo series and the content featured on this site. Your dedication has shaped the gaming industry and brought joy to </p>
+                <p>countless players around the globe. This website would not have been possible without the valuable resources and media from various sources. I would like to </p>
+                <p>extend my appreciation to the creators of the images, videos, and information that have enriched The Nephalems.</p>
+                <p>Thank you for joining me on this journey, and I look forward to sharing the adventure of Diablo 4 with you all!</p>
+                
+                <p>Sincerely,</p>
+                <p>Sangjune Lee</p>
+            </section>
+
+            <section id="honesty-statement" class="content-section">
+                <h2>Honesty Statement</h2>
+                <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. 
+                <p>No part of this assessment has been copied manually or electronically from any other source (including web sites) </p>
+                <p>except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. </p>
+                <p>I also declare that no part of this assignment has been distributed to other students.</p>
+            </section>
+        
+
+            <section id="newsletter" class="content-section">
+                <h2>Join Our Newsletter</h2>
+                <form id="newsletterForm" action="https://httpbin.org/post" method="POST">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <input type="hidden" name="Sangjune Lee" value="Sangjune Lee">
+                    <button type="submit" id="joinButton">Join</button>
+                </form>
+            </section>
+        </body>
+        
+        <footer>
+            <p>&copy; 2023 Sangjune Lee. All rights reserved.</p>
+        </footer>
+        <script src="/js/data.js"></script>
+        </html>
+        
+
+

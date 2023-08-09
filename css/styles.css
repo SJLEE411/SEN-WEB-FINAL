@@ -2,261 +2,179 @@
  * ================
  * Minimal css theme.
  * Project: https://github.com/oxalorg/sakura/
+favicon diablo log from https://www.pngwing.com/en/free-png-nlrpl
+lilith image from https://www.wallpaperflare.com/diablo-4-lilith-diablo-blizzard-entertainment-wallpaper-yjbus
+diable logo image from https://blizzard.gamespress.com/BlizzConline-Co-Streamer-Asset-Pack
+History full image from https://www.purediablo.com/the-diablo-history-timeline
+Lilith and inarius pic is form https://www.mirror.co.uk/gaming/diablo-4-should-offline-mode-30363158
+Fieldboss image from https://cdn.vox-cdn.com/thumbor/OQXvMt4ETDN_Bk5_22YRdFwVL-s=/0x0:7296x4416/920x613/filters:focal(3065x1625:4231x2791):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65615824/Combat_Scosglen_Multiplayer_World_Boss_png_jpgcopy.0.jpg
  */
-/* Body */
-html {
-    font-size: 62.5%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-      "Noto Sans", sans-serif;
+ /* Reset default margin and padding for all elements */
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: "Rokkitt", sans-serif;
+  font-size: 1.0rem;
+  line-height: 1.618;
+  color: #FFFFFF;
+  background-image: url('/css/Lilith.jpg');
+  background-color: #f9f9f9;
+  background-repeat: no-repeat;
+  background-size: cover; /* Resize background image to cover entire container */
+  background-position: center center; /* Center the background image */
+  background-attachment: fixed; /* Prevent background from scrolling */
+  margin: 0; /* Remove default margin */
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+/* Logo image styles */
+.logo-img {
+  margin-top: 50px;
+  width: 400px;
+  height: auto;
+}
+
+/* Navigation styles */
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-weight: 1000;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  font-size: 30px;
+}
+
+.nav__links li {
+  padding: 0 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+/* Call to Action styles */
+.cta {
+  order: 2;
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Mobile Nav styles */
+.menu {
+  display: none;
+}
+
+/* Overlay styles */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+/* Responsive adjustments */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
   }
-  
-  body {
-    font-size: 1.8rem;
-    line-height: 1.618;
-    max-width: 50em;
-    margin: auto;
-    color: #4a4a4a;
-    background-color: #f9f9f9;
-    padding: 13px;
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
-  
-  @media (max-width: 684px) {
-    body {
-      font-size: 1.53rem;
-    }
-  }
-  
-  @media (max-width: 382px) {
-    body {
-      font-size: 1.35rem;
-    }
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    line-height: 1.1;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-      "Noto Sans", sans-serif;
-    font-weight: 700;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    -ms-word-break: break-all;
-    word-break: break-word;
-  }
-  
-  h1 {
-    font-size: 2.35em;
-  }
-  
-  h2 {
-    font-size: 2em;
-  }
-  
-  h3 {
-    font-size: 1.75em;
-  }
-  
-  h4 {
-    font-size: 1.5em;
-  }
-  
-  h5 {
-    font-size: 1.25em;
-  }
-  
-  h6 {
-    font-size: 1em;
-  }
-  
-  p {
-    margin-top: 0px;
-    margin-bottom: 2.5rem;
-  }
-  
-  small,
-  sub,
-  sup {
-    font-size: 75%;
-  }
-  
-  hr {
-    border-color: #1d7484;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #1d7484;
-  }
-  a:hover {
-    color: #982c61;
-    border-bottom: 2px solid #4a4a4a;
-  }
-  a:visited {
-    color: #144f5a;
-  }
-  
-  ul {
-    padding-left: 1.4em;
-    margin-top: 0px;
-    margin-bottom: 2.5rem;
-  }
-  
-  li {
-    margin-bottom: 0.4em;
-  }
-  
-  blockquote {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 1em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    padding-right: 0.8em;
-    border-left: 5px solid #1d7484;
-    margin-bottom: 2.5rem;
-    background-color: #f1f1f1;
-  }
-  
-  blockquote p {
-    margin-bottom: 0;
-  }
-  
-  img,
-  video {
-    height: auto;
-    max-width: 100%;
-    margin-top: 0px;
-    margin-bottom: 2.5rem;
-  }
-  
-  /* Pre and Code */
-  pre {
-    background-color: #f1f1f1;
-    display: block;
-    padding: 1em;
-    overflow-x: auto;
-    margin-top: 0px;
-    margin-bottom: 2.5rem;
-    font-size: 0.9em;
-  }
-  
-  code {
-    font-size: 0.9em;
-    padding: 0 0.5em;
-    background-color: #f1f1f1;
-    white-space: pre-wrap;
-  }
-  
-  pre > code {
-    padding: 0;
-    background-color: transparent;
-    white-space: pre;
-    font-size: 1em;
-  }
-  
-  /* Tables */
-  table {
-    text-align: justify;
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  td,
-  th {
-    padding: 0.5em;
-    border-bottom: 1px solid #f1f1f1;
-  }
-  
-  /* Buttons, forms and input */
-  input,
-  textarea {
-    border: 1px solid #4a4a4a;
-  }
-  input:focus,
-  textarea:focus {
-    border: 1px solid #1d7484;
-  }
-  
-  textarea {
-    width: 100%;
-  }
-  
-  .button,
-  button,
-  input[type="submit"],
-  input[type="reset"],
-  input[type="button"] {
-    display: inline-block;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: #1d7484;
-    color: #f9f9f9;
-    border-radius: 1px;
-    border: 1px solid #1d7484;
-    cursor: pointer;
-    box-sizing: border-box;
-  }
-  .button[disabled],
-  button[disabled],
-  input[type="submit"][disabled],
-  input[type="reset"][disabled],
-  input[type="button"][disabled] {
-    cursor: default;
-    opacity: 0.5;
-  }
-  .button:focus:enabled,
-  .button:hover:enabled,
-  button:focus:enabled,
-  button:hover:enabled,
-  input[type="submit"]:focus:enabled,
-  input[type="submit"]:hover:enabled,
-  input[type="reset"]:focus:enabled,
-  input[type="reset"]:hover:enabled,
-  input[type="button"]:focus:enabled,
-  input[type="button"]:hover:enabled {
-    background-color: #982c61;
-    border-color: #982c61;
-    color: #f9f9f9;
-    outline: 0;
-  }
-  
-  textarea,
-  select,
-  input {
-    color: #4a4a4a;
-    padding: 6px 10px;
-    /* The 6px vertically centers text on FF, ignored by Webkit */
-    margin-bottom: 10px;
-    background-color: #f1f1f1;
-    border: 1px solid #f1f1f1;
-    border-radius: 4px;
-    box-shadow: none;
-    box-sizing: border-box;
-  }
-  textarea:focus,
-  select:focus,
-  input:focus {
-    border: 1px solid #1d7484;
-    outline: 0;
-  }
-  
-  input[type="checkbox"]:focus {
-    outline: 1px dotted #1d7484;
-  }
-  
-  label,
-  legend,
-  fieldset {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-  }
-  
+}
+
+/* Content section styles */
+.content-section {
+  padding-top: 100px;
+  padding-bottom: 100px; /* Add padding to the bottom of content sections */
+}
+
+/* Section styles */
+section {
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 50px 0; /* Adjust padding for the footer */
+}
+/*Info page*/
+.zoomable-image {
+  max-width: 80%; /* Ensure the image fits within the container */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoomed {
+  transform: scale(1.5); /* Zoom effect */
+}
