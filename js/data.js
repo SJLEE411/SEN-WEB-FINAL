@@ -10,7 +10,7 @@
 
   window.reviewData = [
     {
-        name: "Vladmir Putin",
+        name: "Vladmir Psdyegde",
         date: "2023-08-10",
         rating: 4,
         reviewText: "Great game! Enjoyed every moment of it."
