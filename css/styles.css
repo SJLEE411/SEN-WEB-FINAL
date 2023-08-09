@@ -20,13 +20,12 @@ body {
   background-image: url('../images/Lilith.jpg');
   background-color: #f9f9f9;
   background-repeat: no-repeat;
-  background-size: cover; /* Resize background image to cover entire container */
-  background-position: center center; /* Center the background image */
-  background-attachment: fixed; /* Prevent background from scrolling */
-  margin: 0; /* Remove default margin */
+  background-size: cover; 
+  background-position: center center; 
+  background-attachment: fixed;
+  margin: 0; 
 }
 
-/* Header styles */
 header {
   display: flex;
   justify-content: space-between;
@@ -68,88 +67,9 @@ header {
   color: #0088a9;
 }
 
-/* Call to Action styles */
-.cta {
-  order: 2;
-  margin-left: 20px;
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
-.cta:hover {
-  background-color: rgba(0, 136, 169, 0.8);
-}
-
-/* Mobile Nav styles */
-.menu {
-  display: none;
-}
-
-/* Overlay styles */
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  background-color: #24252a;
-  overflow-x: hidden;
-  transition: all 0.5s ease 0s;
-}
-
-.overlay--active {
-  width: 100%;
-}
-
-.overlay__content {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.overlay a {
-  padding: 15px;
-  font-size: 36px;
-  display: block;
-  transition: all 0.3s ease 0s;
-}
-
-.overlay a:hover,
-.overlay a:focus {
-  color: #0088a9;
-}
-
-.overlay .close {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  color: #edf0f1;
-}
-
-/* Responsive adjustments */
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
-  }
-  .overlay .close {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-
-/* Content section styles */
 .content-section {
   padding-top: 100px;
-  padding-bottom: 100px; /* Add padding to the bottom of content sections */
+  padding-bottom: 100px; 
 }
 
 /* Section styles */
@@ -160,17 +80,17 @@ section {
 /* Footer styles */
 footer {
   text-align: center;
-  padding: 50px 0; /* Adjust padding for the footer */
+  padding: 50px 0; 
 }
 /*Info page*/
 .zoomable-image {
-  max-width: 80%; /* Ensure the image fits within the container */
+  max-width: 80%; 
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
 
 .zoomed {
-  transform: scale(1.5); /* Zoom effect */
+  transform: scale(1.5);
 }
 
 .review-card {
