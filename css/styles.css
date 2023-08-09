@@ -23,7 +23,7 @@ body {
   font-size: 1.0rem;
   line-height: 1.618;
   color: #FFFFFF;
-  background-image: url('/Lilith.jpg');
+  background-image: url('Lilith.jpg');
   background-color: #f9f9f9;
   background-repeat: no-repeat;
   background-size: cover; /* Resize background image to cover entire container */
