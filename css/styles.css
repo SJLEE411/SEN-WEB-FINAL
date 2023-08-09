@@ -3,8 +3,6 @@
  * Minimal css theme.
  * Project: https://github.com/oxalorg/sakura/
  */
- /* Reset default margin and padding for all elements */
-/* Reset default margin and padding for all elements */
 * {
   margin: 0;
   padding: 0;
@@ -18,16 +16,18 @@ body {
   line-height: 1.618;
   color: #FFFFFF;
   background-image: url('../images/Lilith.jpg');
-  background-color: #f9f9f9;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center center; 
   background-attachment: fixed;
   margin: 0; 
 
-  @media screen and (max-width: 768px) {
-    background-size: contain; /* or other appropriate value for smaller screens */
-  }
+  @media screen and (max-width: 400px) {
+    background-size: contain; /* appropriate value for smaller screens */
+}
+  
+  
 }
 
 header {

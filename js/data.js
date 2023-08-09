@@ -42,51 +42,51 @@
 ];
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  const reviewCardsContainer = document.getElementById("review-cards");
-  const addReviewForm = document.getElementById("addReviewForm");
-  const createReviewButton = document.getElementById("createReviewButton");
+    document.addEventListener("DOMContentLoaded", function() {
+    const reviewCardsContainer = document.getElementById("review-cards");
+    const addReviewForm = document.getElementById("addReviewForm");
+    const createReviewButton = document.getElementById("createReviewButton");
 
-  //function to generate reviuew
-  function generateReviewCards() {
-      reviewCardsContainer.innerHTML = "";
+    //function to generate reviuew
+    function generateReviewCards() {
+        reviewCardsContainer.innerHTML = "";
 
-      //loop through the review card that is inputted by user
-      reviewData.forEach(review => {
-          const card = document.createElement("div");
-          card.classList.add("review-card");
-          card.innerHTML = `
-              <h3>${review.name}</h3>
-              <p>Date: ${review.date}</p>
-              <p>Rating: ${"★".repeat(review.rating)}${"☆".repeat(5 - review.rating)}</p>
-              <p>${review.reviewText}</p>
-          `;
-          //Append the card to the reviews cards
-          reviewCardsContainer.appendChild(card);
-      });
-  }
+        //loop through the review card that is inputted by user
+        reviewData.forEach(review => {
+            const card = document.createElement("div");
+            card.classList.add("review-card");
+            card.innerHTML = `
+                <h3>${review.name}</h3>
+                <p>Date: ${review.date}</p>
+                <p>Rating: ${"★".repeat(review.rating)}${"☆".repeat(5 - review.rating)}</p>
+                <p>${review.reviewText}</p>
+            `;
+            //Append the card to the reviews cards
+            reviewCardsContainer.appendChild(card);
+        });
+    }
 
-  generateReviewCards();
+    generateReviewCards();
 //when create button clicked
 //retrieves values
 
-  createReviewButton.addEventListener("click", function() {
-      const name = document.getElementById("name").value;
-      const date = document.getElementById("date").value;
-      const rating = parseInt(document.getElementById("rating").value);
-      const reviewText = document.getElementById("reviewText").value;
+    createReviewButton.addEventListener("click", function() {
+        const name = document.getElementById("name").value;
+        const date = document.getElementById("date").value;
+        const rating = parseInt(document.getElementById("rating").value);
+        const reviewText = document.getElementById("reviewText").value;
 
-      if (name && date && rating && reviewText) {
-          reviewData.push({
-              name: name,
-              date: date,
-              rating: rating,
-              reviewText: reviewText
-          });
+        if (name && date && rating && reviewText) {
+            reviewData.push({
+                name: name,
+                date: date,
+                rating: rating,
+                reviewText: reviewText
+            });
 
-          generateReviewCards();
+            generateReviewCards();
 
-          addReviewForm.reset();
-      }
-  });
+            addReviewForm.reset();
+        }
+    });
 });
