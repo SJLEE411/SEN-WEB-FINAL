@@ -10,16 +10,34 @@
 
   window.reviewData = [
     {
-        name: "John Doe",
+        name: "Vladmir Putin",
         date: "2023-08-10",
         rating: 4,
         reviewText: "Great game! Enjoyed every moment of it."
     },
     {
-        name: "Jane Smith",
+        name: "Seowon Kim",
         date: "2023-08-11",
         rating: 5,
         reviewText: "Diablo 4 exceeded all my expectations. Must-play!"
+    },
+    {
+        name: "Sanghoon Lee",
+        date: "2023-08-05",
+        rating: 2,
+        reviewText: "Games too bring, id rather play something else"
+    },
+    {
+        name: "WonHwan Lee",
+        date: "2023-06-18",
+        rating: 5,
+        reviewText: "I play this with my son, he loves it!!"
+    },
+    {
+        name: "KyoungLan Ro",
+        date: "2023-07-11",
+        rating: 1,
+        reviewText: "Too scary"
     },
 ];
 
