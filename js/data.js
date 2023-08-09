@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const addReviewForm = document.getElementById("addReviewForm");
   const createReviewButton = document.getElementById("createReviewButton");
 
+  //function to generate reviuew
   function generateReviewCards() {
       reviewCardsContainer.innerHTML = "";
 
