@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
   function generateReviewCards() {
       reviewCardsContainer.innerHTML = "";
 
+      //loop through the review card that is inputted by user
       reviewData.forEach(review => {
           const card = document.createElement("div");
           card.classList.add("review-card");
@@ -60,11 +61,14 @@ document.addEventListener("DOMContentLoaded", function() {
               <p>Rating: ${"★".repeat(review.rating)}${"☆".repeat(5 - review.rating)}</p>
               <p>${review.reviewText}</p>
           `;
+          //Append the card to the reviews cards
           reviewCardsContainer.appendChild(card);
       });
   }
 
   generateReviewCards();
+//when create button clicked
+//retrieves values
 
   createReviewButton.addEventListener("click", function() {
       const name = document.getElementById("name").value;
